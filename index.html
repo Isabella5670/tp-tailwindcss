@@ -10,7 +10,266 @@
 </head>
 
 <body>
-  <h1>TP - Tailwind CSS</h1>
+  <!-- HEADER -->
+  <header class="bg-white px-4 sm:px-10 lg:px-[286.5px]">
+    <div class="flex justify-between items-center h-16">
+      <div class="flex items-center">
+        <img src="/public/kraken.svg" alt="" class="w-36">
+
+        <!-- Navigation -->
+        <nav class="hidden md:block">
+          <ul class="flex space-x-4 lg:space-x-8 ml-4 lg:ml-[1.5rem]">
+            <li><a href="#" class="text-[#2b1463] font-sans hover:text-[#7132f5]">Investir</a></li>
+            <li><a href="#" class="text-[#2b1463] font-medium hover:text-[#7132f5]">Trader</a></li>
+            <li><a href="#" class="text-[#2b1463] font-medium hover:text-[#7132f5]">Gains</a></li>
+            <li><a href="#" class="text-[#2b1463] font-medium hover:text-[#7132f5]">Insitution</a></li>
+            <li><a href="#" class="text-[#2b1463] font-medium hover:text-[#7132f5]">Marchés</a></li>
+            <li><a href="#" class="text-[#2b1463] font-medium hover:text-[#7132f5]">Apprendre</a></li>
+            <li><a href="#" class="text-[#2b1463] font-medium hover:text-[#7132f5]">Pourquoi Kraken ?</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Boutons -->
+      <div class="hidden md:flex font-medium text-[14px] gap-3.5">
+        <button class="bg-[#855BFB29] text-[#7132f5] px-3 py-2 rounded-xl cursor-pointer">Connexion</button>
+        <button class="bg-[#7132f5] text-white px-3 py-2 rounded-xl cursor-pointer">Inscription</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section>
+    <div class="px-4 sm:px-10 lg:px-20 mb-36">
+      <div class="text-[#2B1463] text-center mt-24 px-4 sm:px-10 lg:px-96">
+        <h1 class="text-[32px] sm:text-[40px] lg:text-[70px] leading-tight font-bold mb-4">
+          Deux plateformes puissantes, <br> une seule mission
+        </h1>
+        <p class="text-base sm:text-xl lg:text-2xl">
+          Commencez votre expérience crypto avec Kraken ou profitez des fonctionnalités <br>
+          avancées de Kraken Pro. Passez d’une plateforme à l’autre à tout moment en un seul clic.
+        </p>
+      </div>
+
+      <!-- CARTES -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16 sm:mt-28 px-4 sm:px-10 lg:px-72">
+        <!-- Kraken -->
+        <div class="text-[#2B1443CC] text-[18px]">
+          <img
+            src="https://assets-cms.kraken.com/images/51n36hrp/facade/ee6a85e9bc3d2a5c007eb287b525e53771b50d26-1144x812.png?w=2048&fit=min&fm=webp"
+            alt="kraken-dashboard" class="rounded-2xl w-full h-auto">
+          <h2 class="text-3xl text-[#2B1463] font-bold mt-8 mb-3.5">Kraken</h2>
+          <p>
+            Investissez dans votre avenir avec Kraken. La manière la plus simple de démarrer et de bâtir votre
+            portefeuille crypto. Commencez avec 10 euros seulement.
+          </p>
+          <ul class="flex flex-col my-8 gap-6">
+            <li class="flex text-gray-700 items-center">
+              <img src="/public/check-icon.png" alt="Icon check" class="w-[36px]">
+              <p>Achetez et vendez des centaines de cryptos en quelques clics</p>
+            </li>
+            <li class="flex text-gray-700 items-center">
+              <img src="/public/check-icon.png" alt="Icon check" class="w-[36px]">
+              <p>Mettez en place des achats automatisés pour faire fructifier votre portefeuille</p>
+            </li>
+            <li class="flex text-gray-700 items-center">
+              <img src="/public/check-icon.png" alt="Icon check" class="w-[36px]">
+              <p>Commencez avec seulement 10 €</p>
+            </li>
+          </ul>
+          <button
+            class="bg-[#7132f5] text-white text-[14px] font-medium px-4 py-3 rounded-xl hover:bg-[#5B1ECF] cursor-pointer">Rejoignez
+            Kraken</button>
+        </div>
+
+        <!-- Kraken Pro -->
+        <div class="text-[#2B1443CC] text-[18px]">
+          <img
+            src="https://assets-cms.kraken.com/images/51n36hrp/facade/ff8ef7e0457aef5479352519b93464215f92c969-1144x812.png?w=2048&fit=min&fm=webp"
+            alt="krakenpro-dashboard" class="rounded-2xl w-full h-auto">
+          <h2 class="text-3xl text-[#2B1463] font-bold mt-8 mb-3.5">Kraken Pro</h2>
+          <p>
+            Tradez des cryptos comme un pro avec des fonctionnalités avancées. Accédez au trading
+            spot et avec marge, ainsi qu’au staking, le tout sur une interface puissante.
+          </p>
+          <ul class="flex flex-col my-8 gap-6">
+            <li class="flex text-gray-700 items-center">
+              <img src="/public/check-icon.png" alt="Icon check" class="w-[36px]">
+              <p>Analyse technique et graphique approfondie</p>
+            </li>
+            <li class="flex text-gray-700 items-center">
+              <img src="/public/check-icon.png" alt="Icon check" class="w-[36px]">
+              <p>Personnalisez votre espace de travail de trading</p>
+            </li>
+            <li class="flex text-gray-700 items-center">
+              <img src="/public/check-icon.png" alt="Icon check" class="w-[36px]">
+              <p>Trading avec marge et spot avancé</p>
+            </li>
+          </ul>
+          <button
+            class="bg-[#7132f5] text-white text-[14px] font-medium px-4 py-3 rounded-xl hover:bg-[#5B1ECF] cursor-pointer">Rejoignez
+            Kraken Pro</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="opacity-10">
+
+  <!-- FOOTER -->
+  <footer
+    class="flex flex-col flex-wrap md:flex-row text-[#554382] justify-between px-4 pt-20 pb-20 sm:px-10 sm:gap-10 lg:px-[286.5px]">
+    <div class="flex flex-col gap-8">
+      <h2 class="text-[28px] font-bold">Faites évoluer votre niveau de trading <br> au niveau supérieur.
+      </h2>
+      <ul class="flex gap-3">
+        <li>
+          <img src="/public/kraken-logo.png" alt="Kraken" class="w-[48px] mb-2">
+          <p class="text-[12px] text-center">Kraken</p>
+        </li>
+        <li>
+          <img src="/public/kraken-pro.png" alt="Pro" class="w-[48px] mb-2">
+          <p class="text-[12px] text-center">Pro</p>
+        </li>
+        <li>
+          <img src="/public/kraken-desktop.png" alt="Desktop" class="w-[48px] mb-2">
+          <p class="text-[12px] text-center">Desktop</p>
+        </li>
+        <li>
+          <img src="/public/kraken-krak.png" alt="Krak" class="w-[48px] rounded-[8px] mb-2">
+          <p class="text-[12px] text-center">Krak</p>
+        </li>
+      </ul>
+      <div class="font-medium text-[14px]">
+        <button class="bg-[#7132f5] text-white px-9 py-3 mr-2 rounded-xl hover:bg-[#5B1ECF] cursor-pointer">Créer un
+          compte</button>
+        <button
+          class="bg-[#855BFB29] text-[#7132f5] px-14 py-3 rounded-xl hover:bg-[#D8CAFE] cursor-pointer">Connexion</button>
+      </div>
+    </div>
+    <div class="flex gap-x-12">
+      <div class="flex flex-col gap-y-5">
+        <div class="flex flex-col">
+          <p class="font-medium">Fonctionnalités</p>
+          <a href="#" class="text-[14px] hover:underline">Trading avec marge</a>
+          <a href="#" class="text-[14px] hover:underline">Trading OTC</a>
+          <a href="#" class="text-[14px] hover:underline">Institutions</a>
+          <a href="#" class="text-[14px] hover:underline">Trading via API</a>
+          <a href="#" class="text-[14px] hover:underline">Kraken API center</a>
+          <a href="#" class="text-[14px] hover:underline">Récompenses de staking</a>
+          <a href="#" class="text-[14px] hover:underline">Envoyer de l'argent</a>
+          <a href="#" class="text-[14px] hover:underline">Achat récurrents</a>
+          <a href="#" class="text-[14px] hover:underline">Acheter de la crypto</a>
+          <a href="#" class="text-[14px] hover:underline">Vendre de la crypto</a>
+        </div>
+        <div class="flex flex-col">
+          <p class="font-medium">Marchés prisés</p>
+          <a href="#" class="text-[14px] hover:underline">BTC à USD</a>
+          <a href="#" class="text-[14px] hover:underline">ETH à USD</a>
+          <a href="#" class="text-[14px] hover:underline">DOGE à USD</a>
+          <a href="#" class="text-[14px] hover:underline">BTC à USD</a>
+          <a href="#" class="text-[14px] hover:underline">XRP à USD</a>
+          <a href="#" class="text-[14px] hover:underline">ADA à USD</a>
+          <a href="#" class="text-[14px] hover:underline">SOL à USD</a>
+          <a href="#" class="text-[14px] hover:underline">LTC à USD</a>
+        </div>
+        <div class="flex flex-col">
+          <p class="font-medium">Portefeuille</p>
+          <a href="#" class="text-[14px] hover:underline">Portefeuille crypto</a>
+          <a href="#" class="text-[14px] hover:underline">Portefeuille Bitcoin</a>
+          <a href="#" class="text-[14px] hover:underline">Portefeuille Ethereum</a>
+          <a href="#" class="text-[14px] hover:underline">Portefeuille Solana</a>
+          <a href="#" class="text-[14px] hover:underline">Portefeuille USDT</a>
+        </div>
+      </div>
+      <div class="flex flex-col gap-y-10">
+        <div class="flex flex-col">
+          <p class="font-medium">Notre compagnie</p>
+          <a href="#" class="text-[14px] hover:underline">Sécurité sur Kraken</a>
+          <a href="#" class="text-[14px] hover:underline">Offres d’emploi</a>
+          <a href="#" class="text-[14px] hover:underline">Blog de Kraken</a>
+          <a href="#" class="text-[14px] hover:underline">Kraken Developer</a>
+          <a href="#" class="text-[14px] hover:underline">Revue de presse</a>
+          <a href="#" class="text-[14px] hover:underline">Programme d’affiliation</a>
+          <a href="#" class="text-[14px] hover:underline">Listes d’actifs</a>
+          <a href="#" class="text-[14px] hover:underline">Statut du site</a>
+          <a href="#" class="text-[14px] hover:underline">Centre de support</a>
+        </div>
+        <div class="flex flex-col">
+          <p class="font-medium">Guides d’achat</p>
+          <a href="#" class="text-[14px] hover:underline">Acheter du Bitcoin</a>
+          <a href="#" class="text-[14px] hover:underline">Acheter de l’Ethereum</a>
+          <a href="#" class="text-[14px] hover:underline">Acheter du Dogecoin</a>
+          <a href="#" class="text-[14px] hover:underline">Acheter du XRP</a>
+          <a href="#" class="text-[14px] hover:underline">Acheter du Cardano</a>
+          <a href="#" class="text-[14px] hover:underline">Acheter du Solana</a>
+          <a href="#" class="text-[14px] hover:underline">Acheter du Litecoin</a>
+          <a href="#" class="text-[14px] hover:underline">Tous les guides sur la crypto</a>
+        </div>
+      </div>
+      <div class="flex flex-col gap-y-10">
+        <div class="flex flex-col">
+          <p class="font-medium">Consulter les cours</p>
+          <a href="#" class="text-[14px] hover:underline">Cours du Bitcoin</a>
+          <a href="#" class="text-[14px] hover:underline">Cours de l’Ethereum</a>
+          <a href="#" class="text-[14px] hover:underline">Cours du Dogecoin</a>
+          <a href="#" class="text-[14px] hover:underline">Cours du XRP</a>
+          <a href="#" class="text-[14px] hover:underline">Cours du Cardano</a>
+          <a href="#" class="text-[14px] hover:underline">Cours du Solana</a>
+          <a href="#" class="text-[14px] hover:underline">Cours du Litecoin</a>
+          <a href="#" class="text-[14px] hover:underline">Catégories de crypto</a>
+          <a href="#" class="text-[14px] hover:underline">Tous les cours des cryptos</a>
+          <a href="#" class="text-[14px] hover:underline">Prévisions des cours</a>
+        </div>
+        <div class="flex flex-col">
+          <p class="font-medium">Initiation à la crypto</p>
+          <a href="#" class="text-[14px] hover:underline">Qu’est-ce que la crypto-monnaie ?</a>
+          <a href="#" class="text-[14px] hover:underline">Qu’est-ce que Bitcoin ?</a>
+          <a href="#" class="text-[14px] hover:underline">Qu’est-ce qu’Ethereum ?</a>
+          <a href="#" class="text-[14px] hover:underline">Meilleures plateformes de contrats à terme sur crypto</a>
+          <a href="#" class="text-[14px] hover:underline">Meilleures plateformes d’échange crypto</a>
+          <a href="#" class="text-[14px] hover:underline">Comparatif entre Kraken et Coinbase</a>
+          <a href="#" class="text-[14px] hover:underline">Comparatif entre Kraken et Binance</a>
+          <a href="#" class="text-[14px] hover:underline">En savoir plus sur la crypto</a>
+        </div>
+      </div>
+    </div>
+    <hr class="w-full opacity-10">
+    <ul class="flex text-[12px] font-semibold gap-4">
+      <li><a href="#">Déclaration de confidentialité</a></li>
+      <li><a href="#">Conditions de service</a></li>
+      <li><a href="#">Paramètres des cookies</a></li>
+      <li><a href="#">Déclaration de confidentialité pour le recrutement</a></li>
+      <li><a href="#">Informations</a></li>
+      <li><a href="#">Règles du marché</a></li>
+      <li><a href="#">Centre de conformité</a></li>
+    </ul>
+    <ul class="grid w-full grid-cols-4 gap-2 sm:flex sm:w-auto sm:flex-wrap sm:justify-end">
+      <li></li>
+      <li></li>
+    </ul>
+    <div class="flex flex-col text-[12px] gap-8">
+      <p>© 2011 - 2025 Payward, Inc.</p>
+      <p>Kraken fournit des services en France par l’intermédiaire de sa société Coin Meester B.V., enregistrée auprès
+        de l’Autorité des Marchés Financiers (AMF) en tant que prestataire de services sur actifs numériques (PSAN) sous
+        le numéro d’immatriculation E2022-058.</p>
+      <p>Payward Europe Solutions Limited, opérant sous le nom de Kraken, est réglementé par la Banque centrale
+        d’Irlande. Payward Global Solutions Limited, opérant sous le nom de Kraken, est réglementé par la Banque
+        centrale d’Irlande. Siège social : 70 Sir John Rogerson’s Quay, Dublin, D02 R296, Irlande. Cliquez ici pour
+        consulter les politiques et informations connexes.</p>
+      <p class="italic">Ces documents sont fournis à titre d’information générale uniquement et ne constituent pas des
+        conseils en
+        investissement ou financiers ni une recommandation ou sollicitation d’acheter, de vendre, de staker ou de
+        détenir des crypto-actifs ou de s’engager dans une stratégie de trading spécifique. Kraken n’augmente ou ne
+        diminue pas le prix des crypto-actifs mis à disposition, et ne cherche pas à le faire. La nature imprévisible
+        des marchés des crypto-actifs peut entraîner une perte de fonds. Des taxes peuvent être dues sur tout gain et/ou
+        sur toute augmentation de la valeur de vos crypto-actifs. Des restrictions géographiques peuvent s’appliquer.
+        Certains marchés et produits crypto ne sont pas réglementés. Le statut réglementaire de Kraken pour ses
+        différents produits et services diffère selon les juridictions et il se peut que vous ne soyez pas protégé par
+        des cadres de compensation publics et/ou de protection réglementaires. Consultez les informations légales pour
+        chaque juridiction (ici).</p>
+    </div>
+  </footer>
 </body>
 
 </html>
