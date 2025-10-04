@@ -23,7 +23,7 @@ Le TP inclut :
 
 1. **Cloner le dépôt :**
 ````bash
-git clone https://github.com/Isabella5670/tp-tailwindcss.git
+git clone https://github.com/isabella-sk/tp-tailwindcss.git
 ````
 
 
